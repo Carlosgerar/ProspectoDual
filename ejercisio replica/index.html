@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel = "stylesheet" href="/src/css/stilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editar usuario</title>
+</head>
+<body>
+    <div class="container">
+        <form class="col-md-12 col-sm-12 col-xs-12 col-auto">
+            <div class="col-md-4 py-3">
+                <h1 class="row col-md-12 colorazul">
+                    Editar usuario
+                </h1>
+            </div>
+            <div class="row border border-5 col-md-12 col-sm-12 col-xs-12 col-auto">
+                <h3 class = "col-auto colorNaranja mx-4 py-3">Datos personales</h3>
+                <div class="row  text-wrap mx-3" >
+                    <div class="col-md-2 col-xs-6 col-sm-4 col-auto  colorazul ">
+                        <span class="form-label colorazul h6">Nombre(s)</span><span class="colorNaranja">*</span>
+                        <input type="text" class="form-control " id="primer nombre" required placeholder="cesar manuel">
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4 col-auto colorazul">
+                        <span class="form-label h6 col-sm-2 posicionRealtiva">Apellido paterno</span><span class="colorNaranja">*</span>
+                        <input type="text" class="form-control" id="apellido paterno" required placeholder="Gonzales">
+                    </div>
+                    <div class="col-md-2 col-xs-6 col-sm-4  col-auto colorazul posicionRealtiva">
+                        <span  class="form-label h6 ">Apellido materno</span><span class="colorNaranja">*</span>
+                        <input type="text" class="form-control" id="apellidso materno" required placeholder="Hernandez">
+                    </div>
+                    <div class="col-md-4  col-xs-12 col-sm-6 col-auto colorazul posicionRealtiva">
+                        <span class="form-label h6">Correo electronico</span><span class="colorNaranja">*</span>
+                        <input type="password" class="form-control " id="correo electronico" required placeholder="cesaremanuelgonzalez@gmail.com">
+                    </div>
+                    <div class = "row g-3">
+                        <div class="col-md-3 col-xs-12 col-sm-8 col-auto posicionRealtiva">
+                            <span class="form-label h5 colorazul">Contraseña</span><span class="colorNaranja">*</span>
+                            <img src="/src/img/ojo cerrado.png" class="ojos" id = "ojosId">
+                            <input type="password" class="form-control constrasena" required>
+                            
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-8  col-auto posicionRealtiva">
+                            <span class="form-label text-nowrap h5 colorazul">Confirmar contraseña</span><span class="colorNaranja">*</span>
+                            <img src="/src/img/ojo cerrado.png" class="ojos ojos2">
+                            <input type="password" class="form-control" id="constrasena1" required>
+                        </div>
+                        <div id="textoconstrasena" class="form-text col-md-12 text-wrap colorazul">
+                            La constraseña debe de ser de al menos posiciones. Debe contontener una letra mayuscula,una minuscula, un numero y un caracter especial como %&$!.
+                        </div>
+                    </div>
+                    <span class="row g-3 mx-1 col-md-10 border border-1 border-end-0 border-start-0 border-start-0"></span>
+                    <div class="py-3 col-md-12 ">
+                        <span class = "colorNaranja col-md-12 h3 ">Roles de usuario</span>
+                        <div class="py-3 mx-1 text-wrap ">
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input " type="checkbox" id = "nuevo cliente">
+                                <span >Nuevo cliente</span>
+                                <div class="boxcheck"></div>
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "mostrar clientes">
+                                <span >Mostrar clientes</span>
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "registrar usuario">
+                                <label class="form-check-label" for="registrar usuario">Registrar usuario</label>
+                                
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "mostrar usuario">
+                                <span >Mostrar usuario</span>
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "Consultar saldo">
+                                <span >Consultar saldo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-12 ">
+                        
+                        <div class="mx-1 text-wrap ">
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "abonar saldo">
+                                <span >abonar saldo</span>
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "debitar saldo">
+                                <span >debitar saldo</span>
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "debitar saldo">
+                                <span >debitar saldo</span>
+                                
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "depositos">
+                                <span >depositos</span>
+                            </div>
+                            <div class="form-check form-check-inline col-md-2">
+                                <input class="form-check-input" type="checkbox" id = "depositos">
+                                <span >agregar Rol</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="py-4 mx-4 d-grid gap-2 d-md-flex justify-content-md-end col-md-10 col-sm-12 col-xs-12 col-auto">
+                        <button type="button" class="col-xs-1 col-sm-2 col-md-2  btn btn-outline-secondary animacionazul colorazul">cancelar</button>
+                        <button class="btn btn-primary col-xs-1 col-sm-2 col-md-2  " style="background: #F58220" type="button">guardar</button>
+                      </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>
